@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="menu">
+    <!-- Tombol Hamburger Menu -->
+    <div id="menu-toggle" class="menu-btn">
+        &#9776; <!-- Simbol garis tiga -->
+    </div>
+
+    <!-- Menu Dropdown -->
+    <div id="menu" class="menu">
         <ul>
             <li><a href="#artikel">Artikel</a></li>
             <li><a href="#galeri">Galeri Pelita</a></li>
@@ -15,13 +21,13 @@
         </ul>
     </div>
 
+    <!-- Halaman Utama -->
     <div class="container">
         <header>
             <h1>PELITA INDONESIA</h1>
-            <p>Hallo generasi Pelita Indonesia!!! Selamat datang di laman Pengembangan Literasi Digital Indonesia.</p>
+            <p>Hallo generasi Pelita Indonesia!!! Selamat datang di laman Pengembangan Literasi Digital Indonesia. Jadilah generasi yang cinta membaca dengan terus berkarya!</p>
             <p> Disini, tim PELITA INDONESIA menyediakan tempat bagi anda untuk berkarya melalui tulisan. Berikan ide terbaik mu disini! Selamat menjelajahi Pelita Indonesia!</p>
             <p>Salam hangat, tim PELITA INDONESIA.</p>
-            
         </header>
 
         <section id="artikel">
@@ -57,5 +63,15 @@
             
         </section>
     </div>
+
+    <script>
+        // Mengaktifkan tombol menu
+        const menuBtn = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
