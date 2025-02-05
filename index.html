@@ -7,89 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigasi -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#about">Tentang Kami</a></li>
-                <li><a href="#programs">Program & Kegiatan</a></li>
-                <li><a href="#gallery">Galeri</a></li>
-                <li><a href="#contact">Kontak</a></li>
-                <li><a href="#blog">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="menu">
+        <ul>
+            <li><a href="#artikel">Artikel</a></li>
+            <li><a href="#galeri">Galeri Pelita</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+        </ul>
+    </div>
 
-    <!-- Beranda -->
-    <section id="home">
-        <h1>PELITA INDONESIA</h1>
-        <p>PELITA (Pengembangan Literasi Digital) INDONESIA merupakan laman kita untuk berbagi dan berinovasi. Ayo tingkatkan keterampilan literasi mu di PELITA INDONESIA.</p>
-    </section>
+    <div class="container">
+        <header>
+            <h1>PELITA INDONESIA</h1>
+            <p>Hallo generasi Pelita Indonesia!!! Selamat datang di laman Pengembangan Literasi Digital Indonesia...</p>
+        </header>
 
-    <!-- Tentang Kami -->
-    <section id="about">
-        <h2>Tentang Kami</h2>
-        <p>Kami tim PELITA INDONESIA berharap dengan adanya laman ini, dapat membantu teman-teman dalam mengeluarkan ide dan berinovasi dalam dunia literasi. Ayo!!! Bergabung dan jadilah generasi yang cinta literasi.</p>
-    </section>
+        <section id="artikel">
+            <h2>Artikel</h2>
+            <form>
+                <input type="text" placeholder="Judul Artikel" required><br>
+                <textarea placeholder="Tulis artikel Anda di sini..." required></textarea><br>
+                <input type="file" accept="image/*"><br>
+                <button type="submit">Unggah Artikel</button>
+            </form>
+            <div id="artikel-list">
+                <!-- Artikel yang sudah diunggah akan muncul di sini -->
+            </div>
+        </section>
 
-    <!-- Program dan Kegiatan -->
-    <section id="programs">
-        <h2>Program dan Kegiatan: PELITA BERBAGI</h2>
-        <p>Daftarkan diri dan kirimkan buku atau karya yang ingin dibagikan di sini.</p>
-        <form action="#">
-            <label for="name">Nama:</label><br>
-            <input type="text" id="name" name="name"><br><br>
+        <section id="galeri">
+            <h2>Galeri Pelita</h2>
+            <form>
+                <input type="text" placeholder="Judul Foto" required><br>
+                <input type="file" accept="image/*" required><br>
+                <button type="submit">Unggah Foto</button>
+            </form>
+            <div id="galeri-list">
+                <!-- Foto yang sudah diunggah akan muncul di sini -->
+            </div>
+        </section>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
-
-            <label for="book">Judul Buku/Karya:</label><br>
-            <input type="text" id="book" name="book"><br><br>
-
-            <label for="file">Unggah Buku/Karya:</label><br>
-            <input type="file" id="file" name="file"><br><br>
-
-            <input type="submit" value="Kirim">
-        </form>
-    </section>
-
-    <!-- Galeri -->
-    <section id="gallery">
-        <h2>Galeri Karya</h2>
-        <p>Unggah dan simpan hasil karya kamu di sini.</p>
-        <form action="#">
-            <label for="gallery-file">Unggah Karya:</label><br>
-            <input type="file" id="gallery-file" name="gallery-file"><br><br>
-
-            <input type="submit" value="Unggah">
-        </form>
-    </section>
-
-    <!-- Kontak -->
-    <section id="contact">
-        <h2>Kontak</h2>
-        <p>Email: <a href="mailto:sherenshs87@gmail.com">sherenshs87@gmail.com</a></p>
-    </section>
-
-    <!-- Blog -->
-    <section id="blog">
-        <h2>Blog/Artikel</h2>
-        <p>Unggah artikel atau karya kamu di sini.</p>
-        <form action="#">
-            <label for="article-title">Judul Artikel:</label><br>
-            <input type="text" id="article-title" name="article-title"><br><br>
-
-            <label for="article-content">Konten Artikel:</label><br>
-            <textarea id="article-content" name="article-content" rows="4" cols="50"></textarea><br><br>
-
-            <input type="submit" value="Unggah Artikel">
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 PELITA INDONESIA. Semua hak dilindungi.</p>
-    </footer>
+        <section id="tentang">
+            <h2>Tentang Kami</h2>
+            <p>Terima kasih telah mengunjungi laman PELITA INDONESIA. Teruslah berkarya dan berinovasi...</p>
+        </section>
+    </div>
 </body>
 </html>
